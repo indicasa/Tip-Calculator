@@ -1,0 +1,98 @@
+:root {
+    --primaryBackgroundColor: rgb(139, 122, 218);
+    --secondaryBackgroundColor: rgb(32, 16, 49);
+    --borderColor: rgb(14, 12, 27);
+    --inputContainerColor: rgba(89, 88, 88, 0.466);
+    --hoverColor: rgb(5, 126, 51);
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.wrapper {
+    height: 545px;
+    width: 360px;
+    margin: 100px auto;
+    background: var(--secondaryBackgroundColor);
+    border-radius: 2.5rem;
+    padding: 1.5rem;
+}
+
+body {
+    background: linear-gradient(to top, black, black, var(--primaryBackgroundColor));
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.inputContainer {
+    margin-top: 1rem;
+}
+
+.billInput,
+.tipInput {
+    height: 30px;
+    width: 350px;
+    color: white;
+    font-size: 1rem;
+    padding-left: 1rem;
+    border-radius: 12px;
+    background: var(--inputContainerColor);
+    border-radius: 15px;
+    border: 1px solid var(--borderColor);
+    transition: all 0.68s;
+}
+
+.billInput:hover {
+    background: var(--hoverColor);
+}
+
+.tipInput:hover {
+    background: var(--hoverColor);
+}
+
+.splitButton {
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 45px;
+    width: 42px;
+    background: var(--inputContainerColor);
+    border: 1px solid var(--borderColor);
+    transition: all 0.68s;
+}
+
+.splitButton:hover {
+    background: var(--hoverColor);
+}
+
+.buttonText {
+    font-size: 1rem;
+}
+
+.splitAmount {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.totalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+.total {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
